@@ -1,7 +1,165 @@
 <!DOCTYPE html>
-<html lang="eng">
-    <body>
-        <h1>Hello Wits</h1>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab-two</title>
+    <!-- Add any additional meta tags, stylesheets, or scripts here -->
+	<style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+        }
 
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #fff; /* Change the color of the links */
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center content horizontally */
+            flex-grow: 1; /* Allow main to take up remaining space */
+        }
+
+        /* Flexbox styles to arrange the last two articles side by side */
+        main section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+	    align-items: center; /* Center items vertically in the section */
+            margin-bottom: 20px; /* Add margin between the nested sections */
+        }
+
+        article {
+            width: 100%; /* Adjusted to take full width */
+            max-width: 600px; /* Added maximum width for better readability */
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            padding: 20px; /* Added padding for better spacing */
+            box-sizing: border-box; /* Include padding and border in the total width */
+        }
+
+        article img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+	article h2,
+        article p {
+            margin: 10px 0;
+        }
+
+        /* Style for the bottom two articles with borders */
+        article.border-box {
+            border: 2px solid #333;
+        }
+
+        /* Clear the right margin for the last article in a row */
+        article:last-child {
+            margin-right: 0;
+        }
+
+	 h2.section-heading {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px; /* Add margin for spacing */
+        }
+
+ 	footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+            margin-top: auto; /* Push the footer to the bottom of the container */
+        }
+
+    </style>
+</head>
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Software Design Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section>
+
+            <article>
+		<h2>About Us</h2>
+		<p>We are a company dedicated to providing excellent services to our customers.</p>
+                <!-- Image1 -->
+                <img src="https://timesproweb-static-backend-prod.s3.ap-south-1.amazonaws.com/Web_Development_Banner_Image_				0e476d1ab6.webp" alt="Image" width="600" height="400">
+            </article>
+        </section>
+
+	<h2 class="section-heading">Our Services</h2>
+
+        <section>
+	    
+            <article class="border-box">
+		<h2>Web Development</h2>
+		<p>We specialize in creating responsive and user-friendly websites.</p>
+                <!-- Image2 -->
+                <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image" 		width="600" height="400">
+            </article>
+
+            <article class="border-box">
+		<h2>Graphic Design</h2>
+		<p>Our talented designers can bring your ideas to life with stunning visuals.</p>
+                <!-- image3 -->
+                <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image" 		width="600" height="400">
+            </article>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 The Lucky Company. All rights reserved.</p>
+    </footer>
+
+</body>
 </html>
